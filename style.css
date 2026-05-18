@@ -152,7 +152,7 @@ nav #b2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5vw 5vw;
+    padding: 5vw 5vw 2vw 5vw;
 }
 
 .p1 button{
@@ -204,7 +204,7 @@ nav #b2{
     gap: 40px;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8{
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12{
     height: 250px;
     width: 300px;
     border: 0px;
@@ -217,13 +217,41 @@ nav #b2{
 
     transition: all 0.3s ease;
     cursor: pointer;
-    background-color: #ea4c89;
+    background-color: transparent;
 }
 
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover{
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover{
     transform: translateY(-10px) scale(1.1);
     box-shadow: 0 10px 25px rgba(255, 0, 255, 0.4), 0 0 20px rgba(255, 0, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.4);;
+}
+
+.lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0vw 5vw;
+}
+
+.lower button{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.lower i{
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 10px;
 }
 
 
@@ -239,51 +267,90 @@ nav #b2{
     overflow: hidden;
 }
 
-.lower{
+.i{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0% 5%;
+    justify-content: space-around;
+    padding: 5px 0px;
+    gap: 50px;
 }
 
-.lower button{
-    font-size: 15px;
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 600;
-    margin: auto;
+.dl{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
 }
 
-.lower i{
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    text-align: center;
+.dl button{
     color: white;
     background-color: grey;
     border: none;
-    padding: 10px;
-    border-radius: 50%;
-    font-weight: 500;
+    padding: 5px;
 }
 
-.s4{
-    padding: 0vw 10vw;
+.dr{
+    display: flex;
+    align-items: center;
 }
+
+.dr i{
+    color: grey;
+}
+
+.group .cards{
+    height: 1rem;
+    width: 1rem;
+    object-fit: cover;
+}
+
 
 .animation{
     width: 100%;
-    height: 10vw;
-    background-color: #ea4c89;
+    height: 20vw;
+    display: flex;
+    overflow-x: auto;
+}
+
+.animation::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    animation: spin 10s infinite linear;
+    padding-right: 10vw;
+}
+
+.cards{
+    flex: 0 0 5em;
+    width: 2em;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: .2em;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes spin {
+    from{translate: 0;}
+    to{translate: -100%;}
 }
 
 .s4{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0vw 5vw;
 }
 
 .s4p{
@@ -291,3 +358,31 @@ nav #b2{
     font-size: 15px;
     font-weight: 600;
 }
+
+.s5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+}
+
+.s5 .s5p1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+}
+
+.s5 .s5p2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+}
+
