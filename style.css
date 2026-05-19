@@ -184,7 +184,8 @@ nav #b2{
     font-weight: 600;
     padding: 10px;
     border: none;
-    border-radius: 50px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .p2{
