@@ -30,6 +30,7 @@ nav #b1{
     font-weight: 600;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 nav .navp2{
@@ -39,6 +40,8 @@ nav .navp2{
     gap: 30px;
 }
 
+
+
 nav #b2{
     font-size: 15px;
     font-weight: 600;
@@ -47,6 +50,7 @@ nav #b2{
     border: 1px solid black;
     border-radius: 50px;
     padding: 15px;
+    cursor: pointer;
 }
 
 #logo{
@@ -54,6 +58,25 @@ nav #b2{
     transform: rotate(-5deg);
     font-weight: 600;
     font-size: 25px;
+    animation: bounce 1.3s infinite alternate;
+}
+
+@keyframes bounce {
+    0%{ 
+        transform: rotate(0); 
+    }
+    25%{ 
+        transform: rotate(20deg); 
+    }
+    50%{ 
+        transform: rotate(0deg);
+    }
+    75%{ 
+        transform: rotate(-20deg);
+    }
+    100%{ 
+        transform: translateY(0);
+    }
 }
 
 .s1{
@@ -222,7 +245,6 @@ nav #b2{
 
 .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover{
     transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 10px 25px rgba(255, 0, 255, 0.4), 0 0 20px rgba(255, 0, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.4);;
 }
 
@@ -265,6 +287,38 @@ nav #b2{
     border: 0px;
     border-radius: 15px;
     overflow: hidden;
+}
+
+.card-img video{
+    height: 240px;
+    width: 320px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#i1{
+    position: absolute;
+    height: 220px;
+    width: 320px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#i2{
+    position: absolute;
+    height: 220px;
+    width: 350px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#i3{
+    position: absolute;
+    height: 210px;
+    width: 300px;
+    object-fit: cover;
+    margin: auto;
+    transform: scale(1.15);
 }
 
 .i{
@@ -326,19 +380,18 @@ nav #b2{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20vw;
+    gap: 10vw;
     animation: spin 10s infinite linear;
     padding-right: 10vw;
 }
 
 .cards{
     flex: 0 0 5em;
-    width: 2em;
-    padding: 1em;
-    font-size: 1rem;
-    border-radius: .2em;
+    width: 1em;
+    padding: 12rem;
     text-align: center;
     justify-content: center;
+    transform: scale(0.8);
 }
 
 @keyframes spin {
