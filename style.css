@@ -275,21 +275,22 @@ nav #b2{
 
 .box1:hover .overlay,  .box2:hover .overlay, .box3:hover .overlay, .box4:hover .overlay, .box5:hover .overlay, .box6:hover .overlay, .box7:hover .overlay, .box8:hover .overlay, .box9:hover .overlay, .box10:hover .overlay, .box11:hover .overlay, .box12:hover .overlay{
     transform: translateY(0%);
-    opacity: 0.75;
+    opacity: 1;
 }
 
 .overlay{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .overlay p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .overlay i{
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     background-color: white;
     color: black;
